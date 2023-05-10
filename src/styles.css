@@ -1,14 +1,47 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ */
+
+ /* @layer base {
+    a{
+        @apply text-green-600 uppercase
+    }
+} 
+
+@layer components{
+    .btn-red{
+        @apply bg-red-400 hover:bg-red-500 hover:translate-y-8
+    }
+    .btn{
+        @apply py-2 px-4 font-semibold rounded-lg shadow-md text-white
+    }
+    
+    .btn-purple{
+        @apply bg-indigo-600 hover:bg-indigo-700
+    }
+}
+
+@layer utilities{
+    .p-21{
+        padding:5.5rem;
+    }
+
+    @variants hover,focus{
+      .p-21{
+        padding: 5.5rem;
+      }
+    }
+}
+
+.content-area{
+    height: theme('spacing[2.5]');
+} */
 
 .btn{
-    @apply py-2 px-4 font-semibold rounded-lg shadow-md text-white
+    @apply p-3 mt-10 border-2
 }
 
-.btn-green{
-    @apply bg-green-400 hover:bg-green-500 hover:translate-y-8
-}
-.btn-purple{
-    @apply bg-indigo-600 hover:bg-indigo-900
+.btn-red{
+    @apply p-3 mt-10 bg-red-500 border-none text-yellow-50 rounded-xl cursor-pointer
 }
